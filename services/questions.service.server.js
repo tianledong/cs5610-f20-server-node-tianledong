@@ -1,6 +1,7 @@
-let questions = require('./questions.json')
+let questions = require('./questions.json');
 findQuestionsForQuiz = (quizId) =>
-    questions.filter(question => question.quizId === quizId)
+    questions.filter(question => question.quizId === quizId);
+
 module.exports = {
     findQuestionsForQuiz
 }
