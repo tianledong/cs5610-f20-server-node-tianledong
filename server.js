@@ -5,6 +5,9 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/whiteboard', {useNewUrlParser: true});
+
 
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -19,5 +22,5 @@ require('./controllers/quizzes.controller.server')(app)
 require('./controllers/questions.controller.server')(app)
 require('./controllers/quiz-attempts.controller.server')(app)
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 3000);
 
