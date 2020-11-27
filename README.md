@@ -1,6 +1,6 @@
 # cs5610-f20-server-node-tianledong
 
-#####Sample data in MongoDb
+##### Sample data in MongoDb
 
 *quizzes collection*
 ```
