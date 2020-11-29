@@ -2,6 +2,8 @@
 
 ##### Sample data in MongoDb
 
+db name: whiteboard
+
 *quizzes collection*
 ```
 [
