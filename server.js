@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI,
+mongoose.connect(process.env.MONGODB_URL,
                  {useNewUrlParser: true, useUnifiedTopology: true});
 
 app.use(function (req, res, next) {
